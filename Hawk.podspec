@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/tent/hawk-objc.git", :tag => "v0.1.5" }
 
-  s.ios.deployment_target = '7.0'
+  s.ios.deployment_target = '6.0'
   s.osx.deployment_target = '10.8'
 
   s.source_files = 'Hawk/**/*.{h,m}'
