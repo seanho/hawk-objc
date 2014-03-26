@@ -181,6 +181,11 @@
     if (self.payload) {
         [header appendData:[[NSString stringWithFormat:@", hash=\"%@\"", [self payloadHash]] dataUsingEncoding:NSUTF8StringEncoding]];
     }
+    
+    // ext
+    if (self.ext) {
+        [header appendData:[[NSString stringWithFormat:@", ext=\"%@\"", self.ext] dataUsingEncoding:NSUTF8StringEncoding]];
+    }
 
     // app
     if (self.app) {
